@@ -45,6 +45,11 @@ function createListItems(arr) {
 
 let html = `
   <h1>You got ${correctAnswer} question(s) correct</h1>
+  <h2>You got this questions right:</h2>
+  <ol>${ createListItems(correct)}</ol>
+
+  <h2>You got this questions wrong:</h2>
+  <ol>${ createListItems(incorrect)}</ol>
 `;
 
 document.querySelector('main').innerHTML = html;
