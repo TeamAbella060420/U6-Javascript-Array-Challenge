@@ -33,6 +33,14 @@ for ( let i = 0; i < questions.length; i++) {
   }
 }
 
+function createListItems(arr) {
+  let items = '';
+  for (let i = 0; i < arr.length; i++) {
+    items += `<li>${arr[i]}</li>`;
+  }
+  return items;
+}
+
 // 4. Display the number of correct answers to the user
 
 let html = `
